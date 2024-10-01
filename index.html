@@ -19,7 +19,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Marketing Exam 1 Study Guide</h1>
+        <h1>Marketing Quiz</h1>
         <form id="quiz-form">
             <!-- Question 1 -->
             <div class="question">
@@ -1117,9 +1117,15 @@
                         </div>
             
 
+            
+
+            <!-- Submit button -->
+            <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
 
     <script>
-       
         function submitQuiz() {
             let score = 0;
             const totalQuestions = 100;  // Update for the number of questions
