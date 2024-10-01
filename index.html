@@ -18,6 +18,11 @@
     </style>
 </head>
 <body>
+     <div id="countdown"></div>
+    <form id="testForm" action="submit_test.php" method="POST">
+        <!-- Your test questions go here -->
+        <button type="submit">Submit Test</button>
+    </form>
     <div class="container">
         <h1>Marketing Quiz</h1>
         <form id="quiz-form">
@@ -1126,6 +1131,21 @@
     </div>
 
     <script>
+             let timeLeft = 116 * 60; // 116 minutes in seconds
+
+        const countdownElement = document.getElementById('countdown');
+        const timer = setInterval(() => {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            countdownElement.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+            if (timeLeft <= 0) {
+                clearInterval(timer);
+                document.getElementById('testForm').submit(); // Submit the form
+            }
+
+            timeLeft--;
+        }, 1000);
         function submitQuiz() {
             let score = 0;
             const totalQuestions = 100;  // Update for the number of questions
