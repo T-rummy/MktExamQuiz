@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Quiz</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f4f9; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        h1 { text-align: center; }
+        .question { margin-bottom: 20px; }
+        .options { list-style-type: none; padding: 0; }
+        .options li { margin-bottom: 10px; }
+        .submit-btn { background-color: #28a745; color: #fff; padding: 10px 20px; border: none; cursor: pointer; }
+        .result { margin-top: 20px; padding: 10px; background-color: #e9ecef; border-left: 4px solid #28a745; }
+        .incorrect { color: red; }
+        .correct-answer { color: green; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Marketing Quiz</h1>
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. What are the four Ps of marketing?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q1" value="a"> Product, Price, Promotion, Place</li>
+                    <li><input type="radio" name="q1" value="b"> Plan, Process, People, Price</li>
+                    <li><input type="radio" name="q1" value="c"> Promotion, Plan, Process, Product</li>
+                    <li><input type="radio" name="q1" value="d"> People, Price, Promotion, Plan</li>
+                </ul>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p>2. What is customer value?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q2" value="a"> The amount a customer pays for a product</li>
+                    <li><input type="radio" name="q2" value="b"> The perceived benefit customers receive compared to cost</li>
+                    <li><input type="radio" name="q2" value="c"> The emotional attachment to a brand</li>
+                    <li><input type="radio" name="q2" value="d"> The price difference between competitors</li>
+                </ul>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p>3. What is the main goal of a for-profit organization?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q3" value="a"> Profit maximization</li>
+                    <li><input type="radio" name="q3" value="b"> Customer satisfaction</li>
+                    <li><input type="radio" name="q3" value="c"> Stakeholder engagement</li>
+                    <li><input type="radio" name="q3" value="d"> Market share growth</li>
+                </ul>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <p>4. What are uncontrollable environmental forces in marketing?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q4" value="a"> Technological, Regulatory, Social, Economic, Competitive</li>
+                    <li><input type="radio" name="q4" value="b"> Product, Price, Promotion, Place</li>
+                    <li><input type="radio" name="q4" value="c"> Management, Staff, Customer</li>
+                    <li><input type="radio" name="q4" value="d"> Financial, Marketing, Research, Product</li>
+                </ul>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <p>5. What is the definition of marketing according to AMA?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q5" value="a"> Advertising products</li>
+                    <li><input type="radio" name="q5" value="b"> Discovering and satisfying customer needs and wants</li>
+                    <li><input type="radio" name="q5" value="c"> Developing internal business strategies</li>
+                    <li><input type="radio" name="q5" value="d"> Evaluating competitor's strategies</li>
+                </ul>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <p>6. What is a key requirement for marketing to occur?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q6" value="a"> Two or more parties with unsatisfied needs</li>
+                    <li><input type="radio" name="q6" value="b"> Understanding of pricing strategies</li>
+                    <li><input type="radio" name="q6" value="c"> Knowledge of consumer behavior</li>
+                    <li><input type="radio" name="q6" value="d"> Market segmentation</li>
+                </ul>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <p>7. What does marketing create through the exchange process?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q7" value="a"> Value</li>
+                    <li><input type="radio" name="q7" value="b"> Products</li>
+                    <li><input type="radio" name="q7" value="c"> Innovation</li>
+                    <li><input type="radio" name="q7" value="d"> Revenue</li>
+                </ul>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <p>8. What is the difference between a product and a service?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q8" value="a"> A product is tangible, a service is intangible</li>
+                    <li><input type="radio" name="q8" value="b"> A product is intangible, a service is tangible</li>
+                    <li><input type="radio" name="q8" value="c"> Products are always better than services</li>
+                    <li><input type="radio" name="q8" value="d"> Services always cost more than products</li>
+                </ul>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <p>9. What is a market?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q9" value="a"> People with the desire and ability to buy a product</li>
+                    <li><input type="radio" name="q9" value="b"> A physical place where products are sold</li>
+                    <li><input type="radio" name="q9" value="c"> A business strategy for selling products</li>
+                    <li><input type="radio" name="q9" value="d"> A company's inventory of products</li>
+                </ul>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <p>10. What is a target market?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q10" value="a"> A specific group of potential customers that a company aims to serve</li>
+                    <li><input type="radio" name="q10" value="b"> The total population of a country</li>
+                    <li><input type="radio" name="q10" value="c"> A random selection of consumers</li>
+                    <li><input type="radio" name="q10" value="d"> The competitors in a given market</li>
+                </ul>
+            </div>
+                        <!-- Question 11 -->
+                        <div class="question">
+                            <p>11. What is a requirement for marketing to occur?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q11" value="a"> A product must exist</li>
+                                <li><input type="radio" name="q11" value="b"> A way for the parties to communicate</li>
+                                <li><input type="radio" name="q11" value="c"> Customers must know each other</li>
+                                <li><input type="radio" name="q11" value="d"> A sale must be made</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 12 -->
+                        <div class="question">
+                            <p>12. What is the goal of marketing activities?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q12" value="a"> Marketing activities should create value</li>
+                                <li><input type="radio" name="q12" value="b"> Marketing should focus solely on promotion</li>
+                                <li><input type="radio" name="q12" value="c"> Marketing is only about customer service</li>
+                                <li><input type="radio" name="q12" value="d"> Marketing is primarily about sales</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 13 -->
+                        <div class="question">
+                            <p>13. What is the group of customers a company aims to serve called?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q13" value="a"> Market Segmentation</li>
+                                <li><input type="radio" name="q13" value="b"> Product Mix</li>
+                                <li><input type="radio" name="q13" value="c"> Target Market</li>
+                                <li><input type="radio" name="q13" value="d"> Customer Set</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 14 -->
+                        <div class="question">
+                            <p>14. What defines a market?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q14" value="a"> A market consists of people with the desire and ability to buy a product</li>
+                                <li><input type="radio" name="q14" value="b"> A physical location where goods are sold</li>
+                                <li><input type="radio" name="q14" value="c"> A business plan for selling</li>
+                                <li><input type="radio" name="q14" value="d"> A company’s inventory of products</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 15 -->
+                        <div class="question">
+                            <p>15. What are environmental forces in marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q15" value="a"> Factors companies can control to influence success</li>
+                                <li><input type="radio" name="q15" value="b"> Internal business strategies</li>
+                                <li><input type="radio" name="q15" value="c"> Organizational strengths and weaknesses</li>
+                                <li><input type="radio" name="q15" value="d"> External factors that impact marketing decisions</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 16 -->
+                        <div class="question">
+                            <p>16. How do technological forces affect marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q16" value="a"> Technological forces can create new opportunities and threats for marketers</li>
+                                <li><input type="radio" name="q16" value="b"> Technology has no real impact on marketing</li>
+                                <li><input type="radio" name="q16" value="c"> Technology only affects production, not marketing</li>
+                                <li><input type="radio" name="q16" value="d"> Technological advances only affect consumer behavior</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 17 -->
+                        <div class="question">
+                            <p>17. What influences customer loyalty?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q17" value="a"> The frequency of marketing campaigns</li>
+                                <li><input type="radio" name="q17" value="b"> The amount of product features</li>
+                                <li><input type="radio" name="q17" value="c"> The perceived value of a product</li>
+                                <li><input type="radio" name="q17" value="d"> The price of competitor products</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 18 -->
+                        <div class="question">
+                            <p>18. In marketing, what does price represent?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q18" value="a"> The cost of producing the product</li>
+                                <li><input type="radio" name="q18" value="b"> What is exchanged for a product</li>
+                                <li><input type="radio" name="q18" value="c"> The value perceived by the customer</li>
+                                <li><input type="radio" name="q18" value="d"> The company's revenue from sales</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 19 -->
+                        <div class="question">
+                            <p>19. Which of the following describes the process of marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q19" value="a"> Marketing is a one-time event</li>
+                                <li><input type="radio" name="q19" value="b"> Marketing involves just creating advertisements</li>
+                                <li><input type="radio" name="q19" value="c"> Marketing is about getting the best deals</li>
+                                <li><input type="radio" name="q19" value="d"> The process of marketing involves planning, execution, and controlling strategies</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 20 -->
+                        <div class="question">
+                            <p>20. Why are competitive forces important in marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q20" value="a"> Competitive forces require marketers to adapt their strategies to stay ahead</li>
+                                <li><input type="radio" name="q20" value="b"> Competition rarely affects marketing decisions</li>
+                                <li><input type="radio" name="q20" value="c"> Competitors only influence product pricing</li>
+                                <li><input type="radio" name="q20" value="d"> Competition is less relevant in marketing strategies</li>
+                            </ul>
+                        </div>
+                                    <!-- Question 21 -->
+            <div class="question">
+                <p>21. What is the primary purpose of market segmentation?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q21" value="a"> To reduce marketing costs</li>
+                    <li><input type="radio" name="q21" value="b"> To identify specific groups of consumers</li>
+                    <li><input type="radio" name="q21" value="c"> To increase production efficiency</li>
+                    <li><input type="radio" name="q21" value="d"> To standardize products</li>
+                </ul>
+            </div>
+
+            <!-- Question 22 -->
+            <div class="question">
+                <p>22. What is the role of advertising in marketing?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q22" value="a"> To lower prices</li>
+                    <li><input type="radio" name="q22" value="b"> To increase product awareness and influence customer behavior</li>
+                    <li><input type="radio" name="q22" value="c"> To eliminate competitors</li>
+                    <li><input type="radio" name="q22" value="d"> To develop new products</li>
+                </ul>
+            </div>
+
+            <!-- Question 23 -->
+            <div class="question">
+                <p>23. What does the term 'brand equity' refer to?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q23" value="a"> The cost of producing a brand</li>
+                    <li><input type="radio" name="q23" value="b"> The value a brand adds to a product</li>
+                    <li><input type="radio" name="q23" value="c"> The number of products under a brand</li>
+                    <li><input type="radio" name="q23" value="d"> The amount spent on advertising</li>
+                </ul>
+            </div>
+
+            <!-- Question 24 -->
+            <div class="question">
+                <p>24. What is a marketing strategy?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q24" value="a"> A plan for how to manage resources</li>
+                    <li><input type="radio" name="q24" value="b"> A series of actions aimed at promoting and selling a product</li>
+                    <li><input type="radio" name="q24" value="c"> A method of analyzing market conditions</li>
+                    <li><input type="radio" name="q24" value="d"> A set of policies for product development</li>
+                </ul>
+            </div>
+
+            <!-- Question 25 -->
+            <div class="question">
+                <p>25. What is customer relationship management (CRM)?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q25" value="a"> Managing customer interactions and data</li>
+                    <li><input type="radio" name="q25" value="b"> Developing new products</li>
+                    <li><input type="radio" name="q25" value="c"> Conducting market research</li>
+                    <li><input type="radio" name="q25" value="d"> Analyzing sales data</li>
+                </ul>
+            </div>
+
+            <!-- Question 26 -->
+            <div class="question">
+                <p>26. Which of the following is a method for assessing customer satisfaction?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q26" value="a"> Sales reports</li>
+                    <li><input type="radio" name="q26" value="b"> Surveys and feedback forms</li>
+                    <li><input type="radio" name="q26" value="c"> Profit margins</li>
+                    <li><input type="radio" name="q26" value="d"> Inventory checks</li>
+                </ul>
+            </div>
+
+            <!-- Question 27 -->
+            <div class="question">
+                <p>27. What is the significance of customer feedback?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q27" value="a"> It is only important for product development</li>
+                    <li><input type="radio" name="q27" value="b"> It helps businesses improve products and services</li>
+                    <li><input type="radio" name="q27" value="c"> It has no real value</li>
+                    <li><input type="radio" name="q27" value="d"> It is mainly for marketing purposes</li>
+                </ul>
+            </div>
+
+            <!-- Question 28 -->
+            <div class="question">
+                <p>28. What does the term 'positioning' refer to in marketing?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q28" value="a"> The location of a product in a store</li>
+                    <li><input type="radio" name="q28" value="b"> The way a product is perceived in the minds of customers</li>
+                    <li><input type="radio" name="q28" value="c"> The price of a product</li>
+                    <li><input type="radio" name="q28" value="d"> The distribution channels for a product</li>
+                </ul>
+            </div>
+
+            <!-- Question 29 -->
+            <div class="question">
+                <p>29. What is the purpose of a marketing plan?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q29" value="a"> To outline marketing strategies and goals</li>
+                    <li><input type="radio" name="q29" value="b"> To define financial objectives</li>
+                    <li><input type="radio" name="q29" value="c"> To analyze competitors</li>
+                    <li><input type="radio" name="q29" value="d"> To determine production methods</li>
+                </ul>
+            </div>
+
+            <!-- Question 30 -->
+            <div class="question">
+                <p>30. What is a unique selling proposition (USP)?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q30" value="a"> A standard feature of all products</li>
+                    <li><input type="radio" name="q30" value="b"> A benefit that makes a product stand out</li>
+                    <li><input type="radio" name="q30" value="c"> A type of promotional strategy</li>
+                    <li><input type="radio" name="q30" value="d"> A method for pricing products</li>
+                </ul>
+            </div>
+                        <!-- Question 31 -->
+                        <div class="question">
+                            <p>31. What is the purpose of conducting market research?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q31" value="a"> To increase production costs</li>
+                                <li><input type="radio" name="q31" value="b"> To understand consumer preferences and market trends</li>
+                                <li><input type="radio" name="q31" value="c"> To lower product quality</li>
+                                <li><input type="radio" name="q31" value="d"> To reduce advertising expenses</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 32 -->
+                        <div class="question">
+                            <p>32. Which of the following is NOT a common method of market research?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q32" value="a"> Surveys</li>
+                                <li><input type="radio" name="q32" value="b"> Focus Groups</li>
+                                <li><input type="radio" name="q32" value="c"> Manufacturing audits</li>
+                                <li><input type="radio" name="q32" value="d"> Observational research</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 33 -->
+                        <div class="question">
+                            <p>33. What is the significance of the marketing mix?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q33" value="a"> It focuses only on advertising</li>
+                                <li><input type="radio" name="q33" value="b"> It helps in designing a comprehensive marketing strategy</li>
+                                <li><input type="radio" name="q33" value="c"> It is only relevant to online marketing</li>
+                                <li><input type="radio" name="q33" value="d"> It has no impact on customer satisfaction</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 34 -->
+                        <div class="question">
+                            <p>34. What does a brand's logo signify?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q34" value="a"> The brand's history</li>
+                                <li><input type="radio" name="q34" value="b"> The company's location</li>
+                                <li><input type="radio" name="q34" value="c"> A visual representation of the brand identity</li>
+                                <li><input type="radio" name="q34" value="d"> The product pricing strategy</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 35 -->
+                        <div class="question">
+                            <p>35. What is a sales funnel?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q35" value="a"> A method for closing deals</li>
+                                <li><input type="radio" name="q35" value="b"> A model that represents the customer journey from awareness to purchase</li>
+                                <li><input type="radio" name="q35" value="c"> A physical tool for sales representatives</li>
+                                <li><input type="radio" name="q35" value="d"> A type of marketing advertisement</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 36 -->
+                        <div class="question">
+                            <p>36. Which of the following is a digital marketing strategy?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q36" value="a"> Print advertising</li>
+                                <li><input type="radio" name="q36" value="b"> Social media marketing</li>
+                                <li><input type="radio" name="q36" value="c"> Television commercials</li>
+                                <li><input type="radio" name="q36" value="d"> Direct mail campaigns</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 37 -->
+                        <div class="question">
+                            <p>37. What does the term 'B2B' stand for?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q37" value="a"> Business to Buyer</li>
+                                <li><input type="radio" name="q37" value="b"> Business to Brand</li>
+                                <li><input type="radio" name="q37" value="c"> Business to Business</li>
+                                <li><input type="radio" name="q37" value="d"> Buyer to Buyer</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 38 -->
+                        <div class="question">
+                            <p>38. What is the main goal of public relations?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q38" value="a"> To increase product sales</li>
+                                <li><input type="radio" name="q38" value="b"> To manage and improve the company's image</li>
+                                <li><input type="radio" name="q38" value="c"> To reduce marketing costs</li>
+                                <li><input type="radio" name="q38" value="d"> To conduct market research</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 39 -->
+                        <div class="question">
+                            <p>39. What is the importance of customer segmentation?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q39" value="a"> It allows companies to treat all customers the same</li>
+                                <li><input type="radio" name="q39" value="b"> It helps in identifying different customer needs and behaviors</li>
+                                <li><input type="radio" name="q39" value="c"> It increases product prices</li>
+                                <li><input type="radio" name="q39" value="d"> It eliminates competition</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 40 -->
+                        <div class="question">
+                            <p>40. What is a loyalty program?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q40" value="a"> A marketing tool to increase customer retention</li>
+                                <li><input type="radio" name="q40" value="b"> A method for acquiring new customers</li>
+                                <li><input type="radio" name="q40" value="c"> A strategy to lower prices</li>
+                                <li><input type="radio" name="q40" value="d"> A way to analyze competitors</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 41 -->
+                        <div class="question">
+                            <p>41. What does 'SEO' stand for in digital marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q41" value="a"> Search Engine Optimization</li>
+                                <li><input type="radio" name="q41" value="b"> Social Engagement Optimization</li>
+                                <li><input type="radio" name="q41" value="c"> Search Engine Operation</li>
+                                <li><input type="radio" name="q41" value="d"> Sales Engagement Optimization</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 42 -->
+                        <div class="question">
+                            <p>42. What is the purpose of a unique value proposition (UVP)?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q42" value="a"> To define the product price</li>
+                                <li><input type="radio" name="q42" value="b"> To explain why a customer should choose your product over competitors'</li>
+                                <li><input type="radio" name="q42" value="c"> To create brand awareness</li>
+                                <li><input type="radio" name="q42" value="d"> To identify customer demographics</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 43 -->
+                        <div class="question">
+                            <p>43. What is the importance of competitive analysis?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q43" value="a"> It helps to ignore competitors</li>
+                                <li><input type="radio" name="q43" value="b"> It provides insights into competitors' strengths and weaknesses</li>
+                                <li><input type="radio" name="q43" value="c"> It increases production costs</li>
+                                <li><input type="radio" name="q43" value="d"> It eliminates the need for marketing strategies</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 44 -->
+                        <div class="question">
+                            <p>44. What is the primary focus of direct marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q44" value="a"> Mass advertising</li>
+                                <li><input type="radio" name="q44" value="b"> Direct communication with targeted consumers</li>
+                                <li><input type="radio" name="q44" value="c"> Social media engagement</li>
+                                <li><input type="radio" name="q44" value="d"> Brand management</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 45 -->
+                        <div class="question">
+                            <p>45. What is the primary goal of influencer marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q45" value="a"> To lower production costs</li>
+                                <li><input type="radio" name="q45" value="b"> To leverage the influence of individuals with a large following</li>
+                                <li><input type="radio" name="q45" value="c"> To eliminate competition</li>
+                                <li><input type="radio" name="q45" value="d"> To conduct market research</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 46 -->
+                        <div class="question">
+                            <p>46. What does a customer journey map represent?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q46" value="a"> The steps a customer takes to purchase a product</li>
+                                <li><input type="radio" name="q46" value="b"> The production process of a product</li>
+                                <li><input type="radio" name="q46" value="c"> The financial cost of customer acquisition</li>
+                                <li><input type="radio" name="q46" value="d"> The inventory management of a product</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 47 -->
+                        <div class="question">
+                            <p>47. What is a product life cycle?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q47" value="a"> The time it takes to manufacture a product</li>
+                                <li><input type="radio" name="q47" value="b"> The progression of a product through introduction, growth, maturity, and decline stages</li>
+                                <li><input type="radio" name="q47" value="c"> The lifespan of a physical product</li>
+                                <li><input type="radio" name="q47" value="d"> The cost analysis of producing a product</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 48 -->
+                        <div class="question">
+                            <p>48. What is an omnichannel marketing strategy?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q48" value="a"> Focusing on one sales channel</li>
+                                <li><input type="radio" name="q48" value="b"> Using multiple channels to provide a seamless customer experience</li>
+                                <li><input type="radio" name="q48" value="c"> Limiting marketing to online platforms</li>
+                                <li><input type="radio" name="q48" value="d"> Analyzing competitor channels</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 49 -->
+                        <div class="question">
+                            <p>49. What is the role of a marketing consultant?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q49" value="a"> To sell products directly</li>
+                                <li><input type="radio" name="q49" value="b"> To provide expertise and guidance on marketing strategies</li>
+                                <li><input type="radio" name="q49" value="c"> To develop products</li>
+                                <li><input type="radio" name="q49" value="d"> To manage customer relationships</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 50 -->
+                        <div class="question">
+                            <p>50. What is the significance of a business's mission statement?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q50" value="a"> It defines the company's financial goals</li>
+                                <li><input type="radio" name="q50" value="b"> It outlines the company's purpose and core values</li>
+                                <li><input type="radio" name="q50" value="c"> It determines employee salaries</li>
+                                <li><input type="radio" name="q50" value="d"> It specifies product pricing</li>
+                            </ul>
+                        </div>
+                        <div class="question">
+                            <p>51. What is the first step in the marketing planning process?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q51" value="a"> Conducting market research</li>
+                                <li><input type="radio" name="q51" value="b"> Setting marketing objectives</li>
+                                <li><input type="radio" name="q51" value="c"> Developing a budget</li>
+                                <li><input type="radio" name="q51" value="d"> Evaluating performance</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 52 -->
+                        <div class="question">
+                            <p>52. Which of the following is a component of a marketing strategy?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q52" value="a"> Target market identification</li>
+                                <li><input type="radio" name="q52" value="b"> Product pricing</li>
+                                <li><input type="radio" name="q52" value="c"> Promotion tactics</li>
+                                <li><input type="radio" name="q52" value="d"> All of the above</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 53 -->
+                        <div class="question">
+                            <p>53. What does the term 'customer lifetime value' refer to?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q53" value="a"> The total revenue a customer will generate during their relationship with a company</li>
+                                <li><input type="radio" name="q53" value="b"> The average purchase amount per transaction</li>
+                                <li><input type="radio" name="q53" value="c"> The time it takes for a customer to make a purchase</li>
+                                <li><input type="radio" name="q53" value="d"> The amount spent on marketing to acquire a customer</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 54 -->
+                        <div class="question">
+                            <p>54. Which marketing strategy focuses on building long-term relationships with customers?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q54" value="a"> Transactional marketing</li>
+                                <li><input type="radio" name="q54" value="b"> Relationship marketing</li>
+                                <li><input type="radio" name="q54" value="c"> Direct marketing</li>
+                                <li><input type="radio" name="q54" value="d"> Mass marketing</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 55 -->
+                        <div class="question">
+                            <p>55. What is a key characteristic of digital marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q55" value="a"> It relies solely on traditional media</li>
+                                <li><input type="radio" name="q55" value="b"> It allows for real-time analytics and tracking</li>
+                                <li><input type="radio" name="q55" value="c"> It is not measurable</li>
+                                <li><input type="radio" name="q55" value="d"> It focuses only on social media</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 56 -->
+                        <div class="question">
+                            <p>56. What is the goal of content marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q56" value="a"> To create advertisements</li>
+                                <li><input type="radio" name="q56" value="b"> To attract and engage customers through valuable content</li>
+                                <li><input type="radio" name="q56" value="c"> To reduce customer service costs</li>
+                                <li><input type="radio" name="q56" value="d"> To increase prices</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 57 -->
+                        <div class="question">
+                            <p>57. What is a potential drawback of influencer marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q57" value="a"> Low engagement rates</li>
+                                <li><input type="radio" name="q57" value="b"> Lack of authenticity</li>
+                                <li><input type="radio" name="q57" value="c"> High costs</li>
+                                <li><input type="radio" name="q57" value="d"> All of the above</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 58 -->
+                        <div class="question">
+                            <p>58. What is the purpose of a brand audit?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q58" value="a"> To analyze financial performance</li>
+                                <li><input type="radio" name="q58" value="b"> To evaluate brand perception and performance</li>
+                                <li><input type="radio" name="q58" value="c"> To determine pricing strategies</li>
+                                <li><input type="radio" name="q58" value="d"> To measure employee satisfaction</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 59 -->
+                        <div class="question">
+                            <p>59. What is the primary goal of social media marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q59" value="a"> To increase brand awareness and customer engagement</li>
+                                <li><input type="radio" name="q59" value="b"> To conduct market research</li>
+                                <li><input type="radio" name="q59" value="c"> To replace traditional advertising</li>
+                                <li><input type="radio" name="q59" value="d"> To manage customer relationships</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 60 -->
+                        <div class="question">
+                            <p>60. What does 'KPI' stand for in marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q60" value="a"> Key Performance Indicator</li>
+                                <li><input type="radio" name="q60" value="b"> Key Product Index</li>
+                                <li><input type="radio" name="q60" value="c"> Key Promotion Initiative</li>
+                                <li><input type="radio" name="q60" value="d"> Key Partnership Interaction</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 61 -->
+                        <div class="question">
+                            <p>61. What is a common reason for product recalls?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q61" value="a"> Changes in branding</li>
+                                <li><input type="radio" name="q61" value="b"> Safety concerns or defects</li>
+                                <li><input type="radio" name="q61" value="c"> Increased marketing expenses</li>
+                                <li><input type="radio" name="q61" value="d"> Changes in pricing strategy</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 62 -->
+                        <div class="question">
+                            <p>62. What is the function of a product warranty?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q62" value="a"> To lower production costs</li>
+                                <li><input type="radio" name="q62" value="b"> To guarantee customer satisfaction</li>
+                                <li><input type="radio" name="q62" value="c"> To build customer trust and reduce purchase risk</li>
+                                <li><input type="radio" name="q62" value="d"> To increase product prices</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 63 -->
+                        <div class="question">
+                            <p>63. What does 'A/B testing' in marketing involve?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q63" value="a"> Comparing two versions of a webpage or ad</li>
+                                <li><input type="radio" name="q63" value="b"> Testing a product before launch</li>
+                                <li><input type="radio" name="q63" value="c"> Analyzing competitor ads</li>
+                                <li><input type="radio" name="q63" value="d"> Developing new marketing strategies</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 64 -->
+                        <div class="question">
+                            <p>64. What is the role of a marketing manager?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q64" value="a"> To analyze financial data</li>
+                                <li><input type="radio" name="q64" value="b"> To oversee marketing campaigns and strategies</li>
+                                <li><input type="radio" name="q64" value="c"> To manage product development</li>
+                                <li><input type="radio" name="q64" value="d"> To control inventory levels</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 65 -->
+                        <div class="question">
+                            <p>65. What does the term 'cross-promoting' mean?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q65" value="a"> Selling multiple products at once</li>
+                                <li><input type="radio" name="q65" value="b"> Promoting products from different companies</li>
+                                <li><input type="radio" name="q65" value="c"> Marketing related products together to increase sales</li>
+                                <li><input type="radio" name="q65" value="d"> Promoting the same product in different markets</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 66 -->
+                        <div class="question">
+                            <p>66. What is a brand ambassador?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q66" value="a"> A customer who reviews products</li>
+                                <li><input type="radio" name="q66" value="b"> A person hired to represent and promote a brand</li>
+                                <li><input type="radio" name="q66" value="c"> An employee who manages the brand</li>
+                                <li><input type="radio" name="q66" value="d"> A product tester</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 67 -->
+                        <div class="question">
+                            <p>67. What is the primary benefit of email marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q67" value="a"> It has high costs</li>
+                                <li><input type="radio" name="q67" value="b"> It allows for personalized communication with customers</li>
+                                <li><input type="radio" name="q67" value="c"> It eliminates the need for other marketing strategies</li>
+                                <li><input type="radio" name="q67" value="d"> It is mainly for sales promotions</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 68 -->
+                        <div class="question">
+                            <p>68. What does the term 'market penetration' refer to?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q68" value="a"> Increasing market share of an existing product</li>
+                                <li><input type="radio" name="q68" value="b"> Introducing a new product to the market</li>
+                                <li><input type="radio" name="q68" value="c"> Reducing prices to gain market share</li>
+                                <li><input type="radio" name="q68" value="d"> Increasing production capacity</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 69 -->
+                        <div class="question">
+                            <p>69. What is the primary focus of experiential marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q69" value="a"> To increase product prices</li>
+                                <li><input type="radio" name="q69" value="b"> To create memorable experiences for consumers</li>
+                                <li><input type="radio" name="q69" value="c"> To sell products at discount prices</li>
+                                <li><input type="radio" name="q69" value="d"> To analyze market data</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 70 -->
+                        <div class="question">
+                            <p>70. What is the purpose of a press release?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q70" value="a"> To sell products directly</li>
+                                <li><input type="radio" name="q70" value="b"> To announce newsworthy information about a company</li>
+                                <li><input type="radio" name="q70" value="c"> To promote employee benefits</li>
+                                <li><input type="radio" name="q70" value="d"> To analyze sales performance</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 71 -->
+                        <div class="question">
+                            <p>71. What is the role of visual branding?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q71" value="a"> To develop new products</li>
+                                <li><input type="radio" name="q71" value="b"> To create a consistent and recognizable image</li>
+                                <li><input type="radio" name="q71" value="c"> To analyze customer demographics</li>
+                                <li><input type="radio" name="q71" value="d"> To lower advertising costs</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 72 -->
+                        <div class="question">
+                            <p>72. What is the significance of user-generated content in marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q72" value="a"> It is always negative</li>
+                                <li><input type="radio" name="q72" value="b"> It helps build trust and authenticity</li>
+                                <li><input type="radio" name="q72" value="c"> It replaces all other marketing methods</li>
+                                <li><input type="radio" name="q72" value="d"> It increases production costs</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 73 -->
+                        <div class="question">
+                            <p>73. What does 'retargeting' mean in digital advertising?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q73" value="a"> Targeting new customers only</li>
+                                <li><input type="radio" name="q73" value="b"> Showing ads to users who have previously interacted with a brand</li>
+                                <li><input type="radio" name="q73" value="c"> Reducing ad costs</li>
+                                <li><input type="radio" name="q73" value="d"> Focusing only on social media platforms</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 74 -->
+                        <div class="question">
+                            <p>74. What is a common method for generating leads?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q74" value="a"> Content marketing</li>
+                                <li><input type="radio" name="q74" value="b"> Increasing prices</li>
+                                <li><input type="radio" name="q74" value="c"> Reducing production</li>
+                                <li><input type="radio" name="q74" value="d"> Ignoring customer feedback</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 75 -->
+                        <div class="question">
+                            <p>75. What is a target audience?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q75" value="a"> A broad group of consumers</li>
+                                <li><input type="radio" name="q75" value="b"> A specific group of consumers targeted by marketing efforts</li>
+                                <li><input type="radio" name="q75" value="c"> Only existing customers</li>
+                                <li><input type="radio" name="q75" value="d"> Competitors in the market</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 76 -->
+                        <div class="question">
+                            <p>76. What is the purpose of a SWOT analysis?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q76" value="a"> To identify strengths, weaknesses, opportunities, and threats</li>
+                                <li><input type="radio" name="q76" value="b"> To create financial reports</li>
+                                <li><input type="radio" name="q76" value="c"> To develop product pricing</li>
+                                <li><input type="radio" name="q76" value="d"> To analyze production processes</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 77 -->
+                        <div class="question">
+                            <p>77. Which social media platform is primarily used for professional networking?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q77" value="a"> Facebook</li>
+                                <li><input type="radio" name="q77" value="b"> Instagram</li>
+                                <li><input type="radio" name="q77" value="c"> LinkedIn</li>
+                                <li><input type="radio" name="q77" value="d"> TikTok</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 78 -->
+                        <div class="question">
+                            <p>78. What does the term 'lead nurturing' refer to?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q78" value="a"> Ignoring potential customers</li>
+                                <li><input type="radio" name="q78" value="b"> Building relationships with leads over time</li>
+                                <li><input type="radio" name="q78" value="c"> Closing deals quickly</li>
+                                <li><input type="radio" name="q78" value="d"> Reducing marketing costs</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 79 -->
+                        <div class="question">
+                            <p>79. What is a marketing budget?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q79" value="a"> The amount allocated for marketing activities</li>
+                                <li><input type="radio" name="q79" value="b"> The total revenue from sales</li>
+                                <li><input type="radio" name="q79" value="c"> The cost of producing goods</li>
+                                <li><input type="radio" name="q79" value="d"> The amount spent on employee salaries</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 80 -->
+                        <div class="question">
+                            <p>80. What is an advertising campaign?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q80" value="a"> A single ad</li>
+                                <li><input type="radio" name="q80" value="b"> A series of coordinated ads aimed at achieving a specific goal</li>
+                                <li><input type="radio" name="q80" value="c"> A method for reducing costs</li>
+                                <li><input type="radio" name="q80" value="d"> A strategy for inventory management</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 81 -->
+                        <div class="question">
+                            <p>81. What is the primary goal of a promotional strategy?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q81" value="a"> To reduce production costs</li>
+                                <li><input type="radio" name="q81" value="b"> To inform, persuade, and remind customers about products</li>
+                                <li><input type="radio" name="q81" value="c"> To analyze market data</li>
+                                <li><input type="radio" name="q81" value="d"> To increase employee morale</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 82 -->
+                        <div class="question">
+                            <p>82. What is the significance of customer personas?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q82" value="a"> They reduce marketing expenses</li>
+                                <li><input type="radio" name="q82" value="b"> They help businesses understand their target audience better</li>
+                                <li><input type="radio" name="q82" value="c"> They define company policies</li>
+                                <li><input type="radio" name="q82" value="d"> They are used for financial forecasting</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 83 -->
+                        <div class="question">
+                            <p>83. What does 'brand loyalty' refer to?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q83" value="a"> Customers' preference for one brand over others</li>
+                                <li><input type="radio" name="q83" value="b"> The price of a product</li>
+                                <li><input type="radio" name="q83" value="c"> The amount spent on advertising</li>
+                                <li><input type="radio" name="q83" value="d"> The number of products a brand offers</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 84 -->
+                        <div class="question">
+                            <p>84. What is the importance of timing in marketing campaigns?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q84" value="a"> It determines product pricing</li>
+                                <li><input type="radio" name="q84" value="b"> It can significantly affect the success of the campaign</li>
+                                <li><input type="radio" name="q84" value="c"> It has no impact on marketing</li>
+                                <li><input type="radio" name="q84" value="d"> It only matters in seasonal campaigns</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 85 -->
+                        <div class="question">
+                            <p>85. What is the role of analytics in marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q85" value="a"> To predict customer behavior</li>
+                                <li><input type="radio" name="q85" value="b"> To measure the effectiveness of marketing efforts</li>
+                                <li><input type="radio" name="q85" value="c"> To analyze financial data</li>
+                                <li><input type="radio" name="q85" value="d"> To create advertising content</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 86 -->
+                        <div class="question">
+                            <p>86. What does 'viral marketing' refer to?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q86" value="a"> A marketing strategy that relies on word-of-mouth</li>
+                                <li><input type="radio" name="q86" value="b"> A technique to spread misinformation</li>
+                                <li><input type="radio" name="q86" value="c"> A form of traditional advertising</li>
+                                <li><input type="radio" name="q86" value="d"> A method for increasing production</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 87 -->
+                        <div class="question">
+                            <p>87. What is the significance of a call-to-action (CTA) in marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q87" value="a"> It defines the marketing budget</li>
+                                <li><input type="radio" name="q87" value="b"> It encourages consumers to take a specific action</li>
+                                <li><input type="radio" name="q87" value="c"> It analyzes customer demographics</li>
+                                <li><input type="radio" name="q87" value="d"> It measures marketing effectiveness</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 88 -->
+                        <div class="question">
+                            <p>88. What is the primary goal of cause marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q88" value="a"> To maximize profits</li>
+                                <li><input type="radio" name="q88" value="b"> To promote social or environmental causes</li>
+                                <li><input type="radio" name="q88" value="c"> To reduce marketing costs</li>
+                                <li><input type="radio" name="q88" value="d"> To eliminate competition</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 89 -->
+                        <div class="question">
+                            <p>89. What does 'market share' represent?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q89" value="a"> The percentage of total sales in a market</li>
+                                <li><input type="radio" name="q89" value="b"> The total number of products sold</li>
+                                <li><input type="radio" name="q89" value="c"> The market size in terms of customers</li>
+                                <li><input type="radio" name="q89" value="d"> The number of competitors in a market</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 90 -->
+                        <div class="question">
+                            <p>90. What is the significance of market positioning?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q90" value="a"> It helps determine product pricing</li>
+                                <li><input type="radio" name="q90" value="b"> It influences how customers perceive a brand</li>
+                                <li><input type="radio" name="q90" value="c"> It eliminates competition</li>
+                                <li><input type="radio" name="q90" value="d"> It focuses on financial performance</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 91 -->
+                        <div class="question">
+                            <p>91. What is a brand extension?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q91" value="a"> Introducing a new product in a different category</li>
+                                <li><input type="radio" name="q91" value="b"> A reduction in product quality</li>
+                                <li><input type="radio" name="q91" value="c"> A marketing strategy for a single product</li>
+                                <li><input type="radio" name="q91" value="d"> A method to increase product prices</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 92 -->
+                        <div class="question">
+                            <p>92. What is a common outcome of effective branding?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q92" value="a"> Increased customer loyalty</li>
+                                <li><input type="radio" name="q92" value="b"> Decreased marketing costs</li>
+                                <li><input type="radio" name="q92" value="c"> Increased production speed</li>
+                                <li><input type="radio" name="q92" value="d"> Elimination of competition</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 93 -->
+                        <div class="question">
+                            <p>93. What does 'customer churn' refer to?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q93" value="a"> The number of new customers acquired</li>
+                                <li><input type="radio" name="q93" value="b"> The rate at which customers stop doing business with a company</li>
+                                <li><input type="radio" name="q93" value="c"> The process of attracting new customers</li>
+                                <li><input type="radio" name="q93" value="d"> The time it takes to convert leads into customers</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 94 -->
+                        <div class="question">
+                            <p>94. What is the main purpose of a landing page in digital marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q94" value="a"> To provide detailed product information</li>
+                                <li><input type="radio" name="q94" value="b"> To convert visitors into leads or customers</li>
+                                <li><input type="radio" name="q94" value="c"> To analyze customer behavior</li>
+                                <li><input type="radio" name="q94" value="d"> To serve as a homepage</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 95 -->
+                        <div class="question">
+                            <p>95. What is the significance of consumer behavior analysis?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q95" value="a"> To reduce marketing costs</li>
+                                <li><input type="radio" name="q95" value="b"> To improve understanding of how consumers make purchasing decisions</li>
+                                <li><input type="radio" name="q95" value="c"> To increase product prices</li>
+                                <li><input type="radio" name="q95" value="d"> To eliminate competition</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 96 -->
+                        <div class="question">
+                            <p>96. What is a common goal of promotional campaigns?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q96" value="a"> To increase product awareness</li>
+                                <li><input type="radio" name="q96" value="b"> To reduce production costs</li>
+                                <li><input type="radio" name="q96" value="c"> To limit customer engagement</li>
+                                <li><input type="radio" name="q96" value="d"> To eliminate competition</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 97 -->
+                        <div class="question">
+                            <p>97. What does the term 'market gap' refer to?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q97" value="a"> A decrease in market size</li>
+                                <li><input type="radio" name="q97" value="b"> An unmet consumer need in the market</li>
+                                <li><input type="radio" name="q97" value="c"> A surplus of products in the market</li>
+                                <li><input type="radio" name="q97" value="d"> A market dominated by one competitor</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 98 -->
+                        <div class="question">
+                            <p>98. What is a common challenge in international marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q98" value="a"> Understanding cultural differences</li>
+                                <li><input type="radio" name="q98" value="b"> Reducing production costs</li>
+                                <li><input type="radio" name="q98" value="c"> Eliminating customer feedback</li>
+                                <li><input type="radio" name="q98" value="d"> Standardizing products across all markets</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 99 -->
+                        <div class="question">
+                            <p>99. What is the role of customer service in marketing?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q99" value="a"> To manage product pricing</li>
+                                <li><input type="radio" name="q99" value="b"> To enhance customer satisfaction and loyalty</li>
+                                <li><input type="radio" name="q99" value="c"> To eliminate competition</li>
+                                <li><input type="radio" name="q99" value="d"> To develop marketing strategies</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Question 100 -->
+                        <div class="question">
+                            <p>100. What does 'brand repositioning' involve?</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q100" value="a"> Changing the price of products</li>
+                                <li><input type="radio" name="q100" value="b"> Altering the brand's image to better meet customer expectations</li>
+                                <li><input type="radio" name="q100" value="c"> Introducing new product lines</li>
+                                <li><input type="radio" name="q100" value="d"> Analyzing competitors</li>
+                            </ul>
+                        </div>
+            
+
+            
+
+            <!-- Submit button -->
+            <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            let score = 0;
+            const totalQuestions = 100;  // Update for the number of questions
+            const answers = {
+                q1: { answer: 'a', fullAnswer: 'The correct answer is Product, Price, Promotion, Place.', explanation: 'These are the controllable factors in the marketing mix, known as the four Ps. They represent the core components of marketing strategy.' },
+                q2: { answer: 'b', fullAnswer: 'The correct answer is The perceived benefit customers receive compared to cost.', explanation: 'Customer value is defined by the balance between the benefit they receive from a product or service and the cost they pay. It is a key factor in customer decision-making.' },
+                q3: { answer: 'a', fullAnswer: 'The correct answer is Profit maximization.', explanation: 'The main goal of for-profit organizations is to generate profits for their shareholders or owners. This helps ensure business sustainability and growth.' },
+                q4: { answer: 'a', fullAnswer: 'The correct answer is Technological, Regulatory, Social, Economic, Competitive.', explanation: 'These are external environmental forces that cannot be controlled by a business, but they affect marketing decisions. Understanding these forces allows businesses to adapt and respond effectively.' },
+                q5: { answer: 'b', fullAnswer: 'The correct answer is Discovering and satisfying customer needs and wants.', explanation: 'Marketing, as defined by AMA, is about identifying customer needs and fulfilling them through products or services. It goes beyond just advertising and focuses on creating value.' },
+                q6: { answer: 'a', fullAnswer: 'The correct answer is Two or more parties with unsatisfied needs.', explanation: 'Marketing occurs when there is a need on both sides, which can be fulfilled through exchange. A business provides a solution to a customer’s unmet need in exchange for something valuable, usually money.' },
+                q7: { answer: 'a', fullAnswer: 'The correct answer is Value.', explanation: 'Marketing creates value through exchange, offering products or services that fulfill needs in return for monetary or other value. Value is the cornerstone of every successful marketing transaction.' },
+                q8: { answer: 'a', fullAnswer: 'The correct answer is A product is tangible, a service is intangible.', explanation: 'Products are physical items that you can touch and see, like phones or clothes, while services are actions or activities provided to a customer, like banking or repairs. This distinction helps marketers position offerings appropriately.' },
+                q9: { answer: 'a', fullAnswer: 'The correct answer is People with the desire and ability to buy a product.', explanation: 'A market consists of consumers or organizations who want and can afford the product. Without both desire and financial ability, no transaction will occur.' },
+                q10: { answer: 'a', fullAnswer: 'The correct answer is A specific group of potential customers that a company aims to serve.', explanation: 'A target market is the group of people who are most likely to buy the company’s product or service. Identifying this group allows companies to tailor their marketing efforts.' },
+                q11: { answer: 'b',  fullAnswer: 'The correct answer is A way for the parties to communicate.', explanation: 'In order for an exchange to take place, there must be communication between the buyer and seller. This communication enables the parties to convey their needs and the available solutions.'  },
+                q12: { answer: 'a', fullAnswer: 'The correct answer is Marketing activities should create value.',  explanation: 'Value creation is the essence of marketing, providing benefits to customers in exchange for their resources. It is central to building long-term customer relationships and business success.' },
+        q13: { 
+            answer: 'c', 
+            fullAnswer: 'The correct answer is Target Market.', 
+            explanation: 'A target market is the group of people a company focuses on to sell its products or services. Identifying this group allows for more efficient and effective marketing strategies.' 
+        },
+        q14: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is A market consists of people with the desire and ability to buy a product.', 
+            explanation: 'A market is defined by customers who not only want the product but also have the means to purchase it. Without both components, no exchange can occur.' 
+        },
+        q15: { 
+            answer: 'd', 
+            fullAnswer: 'The correct answer is Environmental forces are uncontrollable and affect marketing decisions.', 
+            explanation: 'External forces, like economic conditions or competition, are beyond the control of businesses but have a direct impact on marketing strategies. Adapting to these forces is crucial for business survival.' 
+        },
+        q16: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is Technological forces can create new opportunities and threats for marketers.', 
+            explanation: 'Technological advances can lead to new products and services, but they can also make existing offerings obsolete. Marketers must stay ahead of these trends to maintain competitive advantage.' 
+        },
+        q17: { 
+            answer: 'c', 
+            fullAnswer: 'The correct answer is The perceived value of a product influences customer loyalty.', 
+            explanation: 'When customers believe they receive great value for the price paid, they are more likely to stay loyal. Value is often determined by how well the product meets their needs and expectations.' 
+        },
+        q18: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is Price is what is exchanged for a product.', 
+            explanation: 'In the marketing mix, price refers to the amount of money or other resources a customer is willing to give up in exchange for a product or service. It is a key factor in determining the value perception.' 
+        },
+        q19: { 
+            answer: 'd', 
+            fullAnswer: 'The correct answer is The process of marketing involves planning, execution, and controlling strategies.', 
+            explanation: 'Marketing is an ongoing process that involves multiple steps to effectively meet customer needs. It includes not only planning but also adjusting strategies based on performance.' 
+        },
+        q20: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is Competitive forces require marketers to adapt their strategies to stay ahead.', 
+            explanation: 'Competition constantly drives businesses to improve their products and services. Marketers need to stay aware of their competitors and adjust their strategies to maintain market position.' },
+            q21: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To identify specific groups of consumers.', 
+            explanation: 'Market segmentation allows businesses to tailor their products and marketing strategies to meet the specific needs of different groups. This leads to more effective marketing and customer satisfaction.' 
+        },
+        q22: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To increase product awareness and influence customer behavior.', 
+            explanation: 'Advertising plays a crucial role in informing potential customers about products and persuading them to make purchases. It is essential for building brand recognition and loyalty.' 
+        },
+        q23: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is The value a brand adds to a product.', 
+            explanation: 'Brand equity reflects how a brands reputation can enhance the perceived value of its products, allowing for higher pricing and increased customer loyalty. Strong brand equity can lead to competitive advantages.' 
+        },
+        q24: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is A series of actions aimed at promoting and selling a product.', 
+            explanation: 'A marketing strategy outlines the specific actions a business will take to reach its marketing goals and effectively promote its products. This plan is essential for guiding marketing efforts.' 
+        },
+        q25: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is Managing customer interactions and data.', 
+            explanation: 'Customer relationship management (CRM) focuses on using data to improve business relationships with customers, enhance customer satisfaction, and drive sales growth. It is crucial for maintaining long-term customer relationships.' 
+        },
+        q26: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is Surveys and feedback forms.', 
+            explanation: 'These methods allow businesses to gather insights directly from customers regarding their satisfaction with products and services. Understanding customer perspectives is key to improving offerings.' 
+        },
+        q27: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is It helps businesses improve products and services.', 
+            explanation: 'Customer feedback provides valuable insights that can guide improvements and innovations. It is an essential tool for ensuring products meet customer expectations.' 
+        },
+        q28: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is The way a product is perceived in the minds of customers.', 
+            explanation: 'Positioning involves defining how a product is viewed in relation to competitors in the market. Effective positioning can differentiate a product and attract target customers.' 
+        },
+        q29: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is To outline marketing strategies and goals.', 
+            explanation: 'A marketing plan serves as a roadmap for businesses to follow, detailing how they will achieve their marketing objectives. It is essential for aligning resources and efforts toward common goals.' 
+        },
+        q30: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is A benefit that makes a product stand out.', 
+            explanation: 'A unique selling proposition (USP) highlights what differentiates a product from its competitors, making it more appealing to consumers. A strong USP can significantly influence purchasing decisions.' 
+        },
+        q31: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To understand consumer preferences and market trends.', 
+            explanation: 'Market research provides insights into what consumers want, helping businesses tailor their offerings to meet those needs. It is crucial for making informed marketing decisions.' 
+        },
+        q32: { 
+            answer: 'c', 
+            fullAnswer: 'The correct answer is Manufacturing audits.', 
+            explanation: 'Manufacturing audits are not a method for market research; instead, they focus on evaluating production processes. Common methods of market research include surveys, focus groups, and observational research.' 
+        },
+        q33: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is It helps in designing a comprehensive marketing strategy.', 
+            explanation: 'The marketing mix, often referred to as the four Ps, is essential for creating effective marketing strategies that align with customer needs. It ensures that all aspects of marketing work together cohesively.' 
+        },
+        q34: { 
+            answer: 'c', 
+            fullAnswer: 'The correct answer is A visual representation of the brand identity.', 
+            explanation: 'A brand’s logo serves as a key element of its identity, helping consumers recognize and differentiate it from competitors. A strong logo contributes to brand recall and loyalty.' 
+        },
+        q35: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is A model that represents the customer journey from awareness to purchase.', 
+            explanation: 'A sales funnel illustrates the stages a potential customer goes through, allowing businesses to identify areas for improvement in their marketing efforts. Understanding the funnel helps optimize conversions.' 
+        },
+        q36: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is Social media marketing.', 
+            explanation: 'Digital marketing encompasses a variety of online strategies, and social media marketing is one of the most effective ways to engage with consumers. It allows for real-time interaction and feedback.' 
+        },
+        q37: { 
+            answer: 'c', 
+            fullAnswer: 'The correct answer is Business to Business.', 
+            explanation: 'B2B refers to transactions between businesses, typically involving wholesale or service providers. Understanding this model is important for developing appropriate marketing strategies.' 
+        },
+        q38: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To manage and improve the company\'s image.', 
+            explanation: 'Public relations focuses on building a positive image for the company and managing communications with stakeholders. Effective PR can enhance credibility and foster customer trust.' 
+        },
+        q39: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is It helps in identifying different customer needs and behaviors.', 
+            explanation: 'Customer segmentation allows businesses to tailor their marketing efforts to specific groups, leading to more effective campaigns. It enables personalized marketing and improves customer engagement.' 
+        },
+        q40: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is A marketing tool to increase customer retention.', 
+            explanation: 'Loyalty programs incentivize repeat purchases by rewarding customers, thereby enhancing retention rates. They create a sense of belonging and appreciation among customers.' 
+        },
+        q41: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is Search Engine Optimization.', 
+            explanation: 'SEO is a crucial digital marketing strategy aimed at improving a website’s visibility in search engine results. Higher visibility leads to increased traffic and potential sales.' 
+        },
+        q42: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To explain why a customer should choose your product over competitors\'.', 
+            explanation: 'A unique value proposition (UVP) clearly communicates the distinctive benefits of a product, helping it stand out in a crowded market. A strong UVP is essential for attracting and retaining customers.' 
+        },
+        q43: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is It provides insights into competitors\' strengths and weaknesses.', 
+            explanation: 'Competitive analysis helps businesses understand their position in the market, enabling them to make strategic decisions. This knowledge can lead to more effective marketing strategies.' 
+        },
+        q44: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is Direct communication with targeted consumers.', 
+            explanation: 'Direct marketing focuses on engaging customers directly, often resulting in a more personalized experience. It allows businesses to reach specific audiences effectively.' 
+        },
+        q45: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To leverage the influence of individuals with a large following.', 
+            explanation: 'Influencer marketing utilizes the reach and credibility of influencers to promote products, increasing brand awareness and driving sales. It is particularly effective in reaching niche markets.' 
+        },
+        q46: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is The steps a customer takes to purchase a product.', 
+            explanation: 'A customer journey map outlines the entire process a consumer goes through, from initial awareness to final purchase. This understanding helps businesses improve the customer experience.' 
+        },
+        q47: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is The progression of a product through introduction, growth, maturity, and decline stages.', 
+            explanation: 'The product life cycle is crucial for businesses to understand as it influences marketing strategies and resource allocation. Recognizing each stage helps in making informed business decisions.' 
+        },
+        q48: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is Using multiple channels to provide a seamless customer experience.', 
+            explanation: 'An omnichannel strategy integrates various marketing channels, allowing customers to engage with a brand through their preferred platform. This approach enhances customer satisfaction and loyalty.' 
+        },
+        q49: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To provide expertise and guidance on marketing strategies.', 
+            explanation: 'Marketing consultants help businesses identify opportunities and create effective marketing strategies to achieve their goals. Their expertise can lead to improved marketing performance.' 
+        },
+        q50: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is It outlines the company\'s purpose and core values.', 
+            explanation: 'A mission statement provides direction and clarity for a business, helping align goals and values across the organization. It serves as a guiding principle for decision-making and strategy development.' 
+        },
+        q51: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is Conducting market research.', 
+            explanation: 'Conducting market research is essential for understanding the target audience and market dynamics. This foundational step informs all other aspects of the marketing planning process.' 
+        },
+        q52: { 
+            answer: 'd', 
+            fullAnswer: 'The correct answer is All of the above.', 
+            explanation: 'Target market identification, product pricing, and promotion tactics are all integral components of a comprehensive marketing strategy. Each component plays a crucial role in successfully reaching and engaging customers.' 
+        },
+        q53: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is The total revenue a customer will generate during their relationship with a company.', 
+            explanation: 'Customer lifetime value (CLV) helps businesses understand the long-term value of their customers. By analyzing CLV, companies can allocate resources effectively to retain and acquire customers.' 
+        },
+        q54: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is Relationship marketing.', 
+            explanation: 'Relationship marketing focuses on creating long-term connections with customers rather than just transactional exchanges. It emphasizes customer satisfaction and loyalty to build lasting partnerships.' 
+        },
+        q55: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is It allows for real-time analytics and tracking.', 
+            explanation: 'Digital marketing enables marketers to analyze performance in real time, allowing for quick adjustments to improve effectiveness. This data-driven approach enhances overall marketing efficiency.' 
+        },
+        q56: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To attract and engage customers through valuable content.', 
+            explanation: 'Content marketing aims to provide useful information that resonates with the target audience, thereby fostering engagement and loyalty. It helps build trust and authority in the marketplace.' 
+        },
+        q57: { 
+            answer: 'd', 
+            fullAnswer: 'The correct answer is All of the above.', 
+            explanation: 'Influencer marketing has potential drawbacks such as low engagement rates, lack of authenticity, and high costs. Businesses must carefully select influencers to ensure alignment with their brand values.' 
+        },
+        q58: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To evaluate brand perception and performance.', 
+            explanation: 'A brand audit assesses how a brand is perceived in the market, helping identify strengths and weaknesses. This evaluation is essential for strategic planning and improving brand positioning.' 
+        },
+        q59: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is To increase brand awareness and customer engagement.', 
+            explanation: 'The primary goal of social media marketing is to connect with customers where they are most active, thus enhancing brand visibility and fostering meaningful interactions. This engagement can lead to higher conversion rates.' 
+        },
+        q60: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is Key Performance Indicator.', 
+            explanation: 'KPIs are metrics used to measure the effectiveness of marketing activities. They help organizations track progress toward marketing goals and make informed decisions based on data.' 
+        },
+        q61: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is Safety concerns or defects.', 
+            explanation: 'Product recalls typically occur due to safety issues that could pose risks to consumers. Prompt action is essential for maintaining customer trust and brand reputation.' 
+        },
+        q62: { 
+            answer: 'c', 
+            fullAnswer: 'The correct answer is To build customer trust and reduce purchase risk.', 
+            explanation: 'Product warranties reassure customers about their purchase, making them more likely to buy. They demonstrate the companys confidence in its product quality.' 
+        },
+        q63: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is Comparing two versions of a webpage or ad.', 
+            explanation: 'A/B testing helps businesses understand what resonates best with their audience by testing different variations and analyzing performance. This method leads to data-driven improvements in marketing efforts.' 
+        },
+        q64: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To oversee marketing campaigns and strategies.', 
+            explanation: 'Marketing managers are responsible for planning and executing marketing initiatives to achieve business goals. They play a vital role in coordinating efforts across different teams.' 
+        },
+        q65: { 
+            answer: 'c', 
+            fullAnswer: 'The correct answer is Marketing related products together to increase sales.', 
+            explanation: 'Cross-promoting leverages the strengths of complementary products, encouraging customers to consider additional purchases. This strategy can enhance overall sales and customer satisfaction.' 
+        },
+        q66: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is A person hired to represent and promote a brand.', 
+            explanation: 'Brand ambassadors help create awareness and generate positive perception for a brand, often leveraging their personal influence. They serve as trusted voices that resonate with the target audience.' 
+        },
+        q67: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To allow for personalized communication with customers.', 
+            explanation: 'Email marketing provides a direct line of communication to customers, enabling businesses to tailor messages to individual preferences and behaviors. This personalization can significantly improve engagement.' 
+        },
+        q68: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is Increasing market share of an existing product.', 
+            explanation: 'Market penetration strategies focus on selling more of the same product to existing customers or acquiring new customers within the same market. This approach helps strengthen a company’s position without introducing new products.' 
+        },
+        q69: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To create memorable experiences for consumers.', 
+            explanation: 'Experiential marketing aims to engage consumers on a deeper level by creating memorable interactions with a brand. This method fosters emotional connections, which can lead to brand loyalty.' 
+        },
+        q70: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To announce newsworthy information about a company.', 
+            explanation: 'Press releases communicate important updates to the media and public, helping to generate coverage and awareness for a brand or event. They are a crucial tool for managing public relations.' 
+        },
+        q71: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To create a consistent and recognizable image.', 
+            explanation: 'Visual branding helps establish a brand’s identity through design elements, ensuring that consumers can easily recognize and connect with the brand. Consistency in visual branding builds trust and loyalty over time.' 
+        },
+        q72: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is It helps build trust and authenticity.', 
+            explanation: 'User-generated content adds authenticity to a brands image as it reflects real customer experiences. This type of content is often perceived as more trustworthy than traditional advertising.' 
+        },
+        q73: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is Showing ads to users who have previously interacted with a brand.', 
+            explanation: 'Retargeting aims to re-engage potential customers who have shown interest but did not convert. This strategy helps remind them of the brand and encourages them to complete their purchase.' 
+        },
+        q74: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is Building relationships with leads over time.', 
+            explanation: 'Lead nurturing involves engaging potential customers through targeted communication, guiding them through the sales funnel. This approach helps convert leads into loyal customers.' 
+        },
+        q75: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is The amount allocated for marketing activities.', 
+            explanation: 'A marketing budget outlines how much a company plans to spend on marketing initiatives, allowing for effective resource allocation and financial planning. Proper budgeting is essential for achieving marketing goals.' 
+        },
+        q76: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is A series of coordinated ads aimed at achieving a specific goal.', 
+            explanation: 'An advertising campaign consists of multiple marketing efforts that work together to promote a product or service. Effective campaigns align messaging and tactics to maximize impact.' 
+        },
+        q77: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To inform, persuade, and remind customers about products.', 
+            explanation: 'The primary goal of a promotional strategy is to create awareness and drive customer engagement with the brand. It uses various tactics to achieve these objectives effectively.' 
+        },
+        q78: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To help businesses understand their target audience better.', 
+            explanation: 'Customer personas represent ideal customers based on data and research, providing insights that inform marketing strategies. They help tailor messages to meet specific customer needs and preferences.' 
+        },
+        q79: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is Customers\' preference for one brand over others.', 
+            explanation: 'Brand loyalty indicates a consumer’s commitment to repurchase a brand due to positive experiences. This loyalty can lead to repeat sales and referrals, which are vital for long-term success.' 
+        },
+        q80: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is It can significantly affect the success of the campaign.', 
+            explanation: 'Timing plays a crucial role in marketing campaigns as it determines the relevance of messages and the likelihood of customer engagement. Proper timing can enhance effectiveness and maximize impact.' 
+        },
+        q81: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To measure the effectiveness of marketing efforts.', 
+            explanation: 'Analytics provide valuable insights into how well marketing strategies perform, allowing businesses to make data-driven decisions. This information helps optimize future campaigns and improve ROI.' 
+        },
+        q82: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is A marketing strategy that relies on word-of-mouth.', 
+            explanation: 'Viral marketing leverages social sharing to create buzz and spread awareness rapidly. When done effectively, it can lead to exponential growth in brand visibility and engagement.' 
+        },
+        q83: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is It encourages consumers to take a specific action.', 
+            explanation: 'Calls-to-action (CTAs) guide customers toward desired behaviors, such as making a purchase or signing up for a newsletter. Effective CTAs can significantly enhance conversion rates.' 
+        },
+        q84: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To promote social or environmental causes.', 
+            explanation: 'Cause marketing aligns a brand with a social issue, creating a positive image and fostering consumer goodwill. This strategy can enhance brand loyalty and attract socially conscious customers.' 
+        },
+        q85: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is The percentage of total sales in a market.', 
+            explanation: 'Market share indicates how much of the market a company controls, which is crucial for assessing competitiveness. A larger market share often correlates with increased influence and profitability.' 
+        },
+        q86: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is It influences how customers perceive a brand.', 
+            explanation: 'Market positioning is key to establishing a brand’s identity in relation to competitors. Effective positioning helps communicate value propositions and differentiates the brand in consumers’ minds.' 
+        },
+        q87: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is Introducing a new product in a different category.', 
+            explanation: 'Brand extensions leverage existing brand equity to introduce new products, often reducing the risk of failure. This strategy can enhance brand presence and revenue streams.' 
+        },
+        q88: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is Increased customer loyalty.', 
+            explanation: 'Effective branding builds emotional connections with consumers, leading to repeat purchases and advocacy. Strong brand loyalty can significantly enhance long-term profitability.' 
+        },
+        q89: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is The rate at which customers stop doing business with a company.', 
+            explanation: 'Customer churn is an important metric for assessing business health, as high churn rates can indicate dissatisfaction or better competitor offerings. Understanding churn helps businesses implement retention strategies.' 
+        },
+        q90: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is Building relationships with leads over time.', 
+            explanation: 'Lead nurturing is vital for guiding potential customers through the sales funnel by providing relevant information and support. This strategy helps convert leads into loyal customers.' 
+        },
+        q91: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is The amount allocated for marketing activities.', 
+            explanation: 'A marketing budget outlines financial resources dedicated to various marketing efforts, enabling strategic allocation of funds. Proper budgeting is essential for maximizing the impact of marketing initiatives.' 
+        },
+        q92: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is A series of coordinated ads aimed at achieving a specific goal.', 
+            explanation: 'Advertising campaigns are structured to create a unified message across multiple platforms, enhancing overall effectiveness. Coordination ensures consistent brand communication and messaging.' 
+        },
+        q93: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To inform, persuade, and remind customers about products.', 
+            explanation: 'Promotional strategies aim to raise awareness and encourage action from consumers. They play a crucial role in driving sales and enhancing brand recognition.' 
+        },
+        q94: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To help businesses understand their target audience better.', 
+            explanation: 'Customer personas provide insights into the preferences and behaviors of ideal customers, guiding marketing efforts. These profiles help tailor messages to meet the needs of specific segments.' 
+        },
+        q95: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is Customers\' preference for one brand over others.', 
+            explanation: 'Brand loyalty reflects a consumer’s commitment to repurchase a brand due to positive experiences. This loyalty can lead to increased sales and customer referrals, vital for business success.' 
+        },
+        q96: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is It can significantly affect the success of the campaign.', 
+            explanation: 'Timing in marketing is crucial as it influences consumer engagement and the relevance of messages. Well-timed campaigns can maximize reach and effectiveness.' 
+        },
+        q97: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To measure the effectiveness of marketing efforts.', 
+            explanation: 'Analytics are essential for understanding how well marketing strategies perform, enabling data-driven decisions. They help identify areas for improvement and optimize future campaigns.' 
+        },
+        q98: { 
+            answer: 'a', 
+            fullAnswer: 'The correct answer is A marketing strategy that relies on word-of-mouth.', 
+            explanation: 'Viral marketing leverages social sharing to create rapid awareness and engagement with a brand. It can lead to exponential growth in visibility when executed effectively.' 
+        },
+        q99: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is It encourages consumers to take a specific action.', 
+            explanation: 'Calls-to-action (CTAs) are essential for guiding customers toward desired behaviors, such as making a purchase or signing up for a newsletter. Effective CTAs can significantly enhance conversion rates.' 
+        },
+        q100: { 
+            answer: 'b', 
+            fullAnswer: 'The correct answer is To promote social or environmental causes.', 
+            explanation: 'Cause marketing aligns a brand with a social issue, creating a positive image and fostering consumer goodwill. This strategy can enhance brand loyalty and attract socially conscious customers.' 
+        }
+        
+
+            };
+    
+            let resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '';  // Clear previous results
+    
+            for (let i = 1; i <= totalQuestions; i++) {
+                let selected = document.querySelector(`input[name="q${i}"]:checked`);
+                let correctAnswer = answers[`q${i}`].answer;
+                let fullAnswer = answers[`q${i}`].fullAnswer;
+                let explanation = answers[`q${i}`].explanation;
+    
+                if (selected) {
+                    if (selected.value === correctAnswer) {
+                        score++;
+                    } else {
+                        // Display which question was wrong, the full correct answer, and the explanation
+                        let questionDiv = document.createElement('div');
+                        questionDiv.className = 'incorrect';
+                        questionDiv.innerHTML = `
+                            <p>Question ${i}: You selected <strong>${selected.value}</strong>.</p>
+                            <p class="correct-answer">${fullAnswer}</p>
+                            <p><em>${explanation}</em></p>
+                        `;
+                        resultDiv.appendChild(questionDiv);
+                    }
+                } else {
+                    // If no answer was selected
+                    let questionDiv = document.createElement('div');
+                    questionDiv.className = 'incorrect';
+                    questionDiv.innerHTML = `
+                        <p>Question ${i}: No answer selected.</p>
+                        <p class="correct-answer">${fullAnswer}</p>
+                        <p><em>${explanation}</em></p>
+                    `;
+                    resultDiv.appendChild(questionDiv);
+                    const additionalQuestions = {
+        
+    };
+
+    // Merge the new questions with the existing answers object
+    const answers = Object.assign(answers, additionalQuestions);
+                }
+            }
+    
+            // Display score
+            let scoreDiv = document.createElement('div');
+            scoreDiv.innerHTML = `You scored ${score} out of ${totalQuestions}.`;
+            resultDiv.appendChild(scoreDiv);
+            resultDiv.style.display = 'block';
+        }
+    </script>
